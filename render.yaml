@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: furby-investimentos-backend
+    name: furbyback
     env: node
     plan: free
     buildCommand: npm install

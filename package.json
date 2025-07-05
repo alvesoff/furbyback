@@ -1,5 +1,5 @@
 {
-  "name": "furby-investimentos-backend",
+  "name": "furbyback",
   "version": "1.0.0",
   "description": "Backend da plataforma de investimentos Furby",
   "main": "server.js",
