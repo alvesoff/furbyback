@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: furby-investimentos-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ASAAS_ENVIRONMENT
+        value: production
+      - key: ASAAS_BASE_URL
+        value: https://api.asaas.com/v3
+      - key: PIX_PROVIDER
+        value: asaas
+      - key: PORT
+        value: 10000
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 900000
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: 100
+    healthCheckPath: /api/health
+    autoDeploy: false
