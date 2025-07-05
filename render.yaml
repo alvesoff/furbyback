@@ -20,5 +20,7 @@ services:
         value: 900000
       - key: RATE_LIMIT_MAX_REQUESTS
         value: 100
+      - key: CORS_ORIGIN
+        value: https://furbyfront.vercel.app
     healthCheckPath: /api/health
     autoDeploy: false
